@@ -411,9 +411,10 @@ def change_password_and_logout_all(request):
 
 # ==================== Google Login ====================
 
+from django.shortcuts import redirect
+
 def google_login(request):
-    """Redirect to Google OAuth login"""
-    return redirect('/accounts/google/login/')
+    return redirect('/accounts/google/login/?process=login')
 
 from utils.email_notifications import send_welcome_email
 
