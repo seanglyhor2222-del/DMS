@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2 class="fw-bold">
+            <i class="fas fa-laptop-code text-primary me-2"></i>Active Sessions
+        </h2>
+        <p class="text-muted mb-0">Manage devices where you're logged in</p>
+    </div>
+    <div>
+        <form method="post" action="{% url 'force_logout_all' %}" class="d-inline" onsubmit="return confirm('Are you sure you want to logout ALL other devices?');">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger">
+                <i class="fas fa-sign-out-alt me-2"></i>Logout All Other Devices
+            </button>
+        </form>
+    </div>
+</div>
+
+<div class="card border-0 shadow-sm rounded-4">
+    <div class="card-header bg-white border-0 pt-4">
+        <h5 class="fw-bold mb-0">
+            <i class="fas fa-list me-2"></i>Your Active Sessions
+        </h5>
+    </div>
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table table-hover mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th><i class="fas fa-laptop me-1"></i>Device</th>
+                        <th><i class="fas fa-map-marker-alt me-1"></i>IP Address</th>
+                        <th><i class="fas fa-clock me-1"></i>Login Time</th>
+                        <th><i class="fas fa-hourglass-half me-1"></i>Last Activity</th>
+                        <th><i class="fas fa-cog me-1"></i>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for session in sessions %}
+                    <tr {% if session.session_key == current_session %}class="table-primary"{% endif %}>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="me-2">
+                                    {% if 'Chrome' in session.user_agent %}
+                                    <i class="fab fa-chrome fa-2x text-success"></i>
+                                    {% elif 'Firefox' in session.user_agent %}
+                                    <i class="fab fa-firefox fa-2x text-warning"></i>
+                                    {% elif 'Safari' in session.user_agent %}
+                                    <i class="fab fa-safari fa-2x text-info"></i>
+                                    {% elif 'Edge' in session.user_agent %}
+                                    <i class="fab fa-edge fa-2x text-primary"></i>
+                                    {% else %}
+                                    <i class="fas fa-laptop fa-2x text-secondary"></i>
+                                    {% endif %}
+                                </div>
+                                <div>
+                                    <strong>{{ session.device_info }}</strong>
+                                    {% if session.session_key == current_session %}
+                                    <span class="badge bg-success ms-2">Current Device</span>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </td>
+                        <td><code>{{ session.ip_address|default:'Unknown' }}</code></td>
+                        <td><small>{{ session.login_time|date:"Y-m-d H:i:s" }}</small></td>
+                        <td><small>{{ session.last_activity|date:"Y-m-d H:i:s" }}</small></td>
+                        <td>
+                            {% if session.session_key != current_session %}
+                            <form method="post" action="{% url 'force_logout_session' session.session_key %}" 
+                                  onsubmit="return confirm('Are you sure you want to logout this device?');">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-sm btn-danger">
+                                    <i class="fas fa-power-off me-1"></i>Logout
+                                </button>
+                            </form>
+                            {% else %}
+                            <button class="btn btn-sm btn-secondary" disabled>
+                                <i class="fas fa-check me-1"></i>Current
+                            </button>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="5" class="text-center py-5">
+                            <i class="fas fa-laptop fa-4x text-muted mb-3 d-block"></i>
+                            <h5 class="text-muted">No active sessions</h5>
+                            <p class="text-muted">You are not logged in anywhere</p>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="card-footer bg-white border-0 pb-4">
+        <div class="alert alert-info mb-0">
+            <i class="fas fa-info-circle me-2"></i>
+            <strong>Security Tip:</strong> If you don't recognize a device, click "Logout" immediately and change your password.
+        </div>
+    </div>
+</div>
+
+<!-- Change Password Section -->
+<div class="card border-0 shadow-sm rounded-4 mt-4">
+    <div class="card-header bg-white border-0 pt-4">
+        <h5 class="fw-bold mb-0">
+            <i class="fas fa-key text-warning me-2"></i>Change Password
+        </h5>
+    </div>
+    <div class="card-body">
+        <form method="post" action="{% url 'change_password_and_logout_all' %}" 
+              onsubmit="return confirm('WARNING: This will logout ALL your devices including this one. You will need to login again with your new password. Continue?');">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">New Password</label>
+                        <input type="password" name="new_password" class="form-control" required minlength="8">
+                        <small class="text-muted">Minimum 8 characters</small>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Confirm New Password</label>
+                        <input type="password" name="confirm_password" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+            <div class="alert alert-warning">
+                <i class="fas fa-exclamation-triangle me-2"></i>
+                <strong>Warning:</strong> Changing your password will log you out from ALL devices. You will need to login again with your new password.
+            </div>
+            <button type="submit" class="btn btn-warning">
+                <i class="fas fa-key me-2"></i>Change Password & Logout All Devices
+            </button>
+        </form>
+    </div>
+</div>
+
+<style>
+    .table th, .table td {
+        vertical-align: middle;
+        padding: 1rem;
+    }
+    .rounded-4 {
+        border-radius: 1rem !important;
+    }
+    .table-primary {
+        background-color: rgba(102, 126, 234, 0.1) !important;
+    }
+    .form-control {
+        border: 2px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 10px 15px;
+    }
+    .form-control:focus {
+        border-color: #667eea;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        outline: none;
+    }
+</style>
+{% endblock %}

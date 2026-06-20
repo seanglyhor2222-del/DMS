@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container-fluid">
+
+    <h2 class="mb-4">
+        User Activity : {{ user_obj.username }}
+    </h2>
+
+    <div class="row mb-4">
+
+    <div class="col-md-3">
+        <div class="card shadow-sm">
+            <div class="card-body text-center">
+                <h2>{{ total_docs }}</h2>
+                <p class="mb-0">Total Documents</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card shadow-sm border-success">
+            <div class="card-body text-center">
+                <h2 class="text-success">
+                    {{ approved_docs }}
+                </h2>
+                <p class="mb-0">Approved</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card shadow-sm border-warning">
+            <div class="card-body text-center">
+                <h2 class="text-warning">
+                    {{ pending_docs }}
+                </h2>
+                <p class="mb-0">Pending</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card shadow-sm border-danger">
+            <div class="card-body text-center">
+                <h2 class="text-danger">
+                    {{ rejected_docs }}
+                </h2>
+                <p class="mb-0">Rejected</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="card">
+
+        <div class="card-header">
+            Documents Uploaded
+        </div>
+
+        <table class="table">
+
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Category</th>
+                    <th>Status</th>
+                    <th>Created</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+            {% for doc in documents %}
+
+                <tr>
+                    <td>{{ doc.title }}</td>
+
+                    <td>
+                        {{ doc.category.name }}
+                    </td>
+
+                    <td>
+                        {{ doc.status }}
+                    </td>
+
+                    <td>
+                        {{ doc.created_at }}
+                    </td>
+                </tr>
+
+            {% empty %}
+
+                <tr>
+                    <td colspan="4">
+                        No documents found
+                    </td>
+                </tr>
+
+            {% endfor %}
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+{% endblock %}

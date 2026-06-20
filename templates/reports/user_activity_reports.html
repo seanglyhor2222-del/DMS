@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container-fluid">
+
+    <h2 class="mb-4">
+        User Activity Reports
+    </h2>
+
+    <form method="GET" class="mb-3">
+
+        <input
+            type="text"
+            name="search"
+            value="{{ request.GET.search }}"
+            placeholder="Search User"
+            class="form-control"
+        >
+
+    </form>
+
+    <div class="card">
+
+        <table class="table">
+
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Department</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+            {% for user in users %}
+
+                <tr>
+
+<td>
+    <a href="{% url 'user_activity_detail' user.user_id %}">
+        {{ user.username }}
+    </a>
+</td>
+
+                    <td>
+                        {{ user.email }}
+                    </td>
+
+                    <td>
+                        {{ user.department }}
+                    </td>
+
+                    <td>
+                        {% if user.role %}
+                            {{ user.role.role_name }}
+                        {% endif %}
+                    </td>
+
+                </tr>
+
+            {% empty %}
+
+                <tr>
+                    <td colspan="4">
+                        No users found
+                    </td>
+                </tr>
+
+            {% endfor %}
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+{% endblock %}

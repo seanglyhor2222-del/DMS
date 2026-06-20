@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="content-card text-center">
+            <i class="fas fa-exclamation-triangle fa-4x text-warning mb-3"></i>
+            <h4>Delete User</h4>
+            <p>Are you sure you want to delete user <strong>"{{ user.username }}"</strong>?</p>
+            <p class="text-danger">This action cannot be undone!</p>
+            <form method="post">
+                {% csrf_token %}
+                <a href="{% url 'user_list' %}" class="btn btn-secondary">Cancel</a>
+                <button type="submit" class="btn btn-danger">Yes, Delete</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

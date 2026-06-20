@@ -1,0 +1,214 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2 class="fw-bold">
+            <i class="fas fa-history text-primary me-2"></i>Activity Log
+        </h2>
+        <p class="text-muted mb-0">Track all user activities in the system</p>
+    </div>
+    <div>
+        <span class="badge bg-primary px-3 py-2">
+            <i class="fas fa-chart-line me-1"></i>
+            Total: {{ activities.count }}
+        </span>
+    </div>
+</div>
+
+<!-- Filter Section -->
+<div class="card border-0 shadow-sm rounded-4 mb-4">
+    <div class="card-body">
+        <form method="get" class="row g-3">
+            <div class="col-md-4">
+                <label class="form-label fw-semibold">
+                    <i class="fas fa-user me-1"></i>Filter by User
+                </label>
+                <select name="user" class="form-select">
+                    <option value="">All Users</option>
+                    {% for user in users %}
+                    <option value="{{ user.id }}" {% if selected_user == user.id|stringformat:"s" %}selected{% endif %}>
+                        {{ user.username }} ({{ user.get_full_name|default:user.username }})
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label class="form-label fw-semibold">
+                    <i class="fas fa-tag me-1"></i>Filter by Action
+                </label>
+                <select name="action" class="form-select">
+                    <option value="">All Actions</option>
+                    {% for action in actions %}
+                    <option value="{{ action }}" {% if selected_action == action %}selected{% endif %}>
+                        {% if action == 'login' %}Login
+                        {% elif action == 'logout' %}Logout
+                        {% elif action == 'upload' %}Upload Document
+                        {% elif action == 'download' %}Download Document
+                        {% elif action == 'edit' %}Edit Document
+                        {% elif action == 'delete' %}Delete Document
+                        {% elif action == 'approve' %}Approve Document
+                        {% elif action == 'reject' %}Reject Document
+                        {% elif action == 'view' %}View Document
+                        {% elif action == 'share' %}Share Document
+                        {% elif action == 'register' %}Register Account
+                        {% elif action == 'force_logout' %}Force Logout
+                        {% else %}{{ action|title }}
+                        {% endif %}
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-4 d-flex align-items-end">
+                <div class="d-flex gap-2 w-100">
+                    <button type="submit" class="btn btn-primary flex-grow-1">
+                        <i class="fas fa-filter me-2"></i>Apply Filter
+                    </button>
+                    <a href="{% url 'activity_log' %}" class="btn btn-secondary">
+                        <i class="fas fa-redo me-1"></i>Reset
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Activity Log Table -->
+<div class="card border-0 shadow-sm rounded-4">
+    <div class="card-header bg-white border-0 pt-4">
+        <h5 class="fw-bold mb-0">
+            <i class="fas fa-list me-2"></i>Recent Activities
+        </h5>
+    </div>
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table table-hover mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th><i class="fas fa-user me-1"></i>User</th>
+                        <th><i class="fas fa-tag me-1"></i>Action</th>
+                        <th><i class="fas fa-align-left me-1"></i>Description</th>
+                        <th><i class="fas fa-file-alt me-1"></i>Document</th>
+                        <th><i class="fas fa-calendar me-1"></i>Timestamp</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for activity in activities %}
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="bg-primary bg-opacity-10 rounded-circle p-2 me-2">
+                                    <i class="fas fa-user-circle text-primary"></i>
+                                </div>
+                                <div>
+                                    <strong>{{ activity.user.username }}</strong>
+                                    <div class="small text-muted">{{ activity.user.get_full_name|default:'' }}</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            {% if activity.action == 'login' %}
+                            <span class="badge bg-success"><i class="fas fa-sign-in-alt me-1"></i>Login</span>
+                            {% elif activity.action == 'logout' %}
+                            <span class="badge bg-secondary"><i class="fas fa-sign-out-alt me-1"></i>Logout</span>
+                            {% elif activity.action == 'upload' %}
+                            <span class="badge bg-primary"><i class="fas fa-upload me-1"></i>Upload</span>
+                            {% elif activity.action == 'download' %}
+                            <span class="badge bg-info"><i class="fas fa-download me-1"></i>Download</span>
+                            {% elif activity.action == 'edit' %}
+                            <span class="badge bg-warning"><i class="fas fa-edit me-1"></i>Edit</span>
+                            {% elif activity.action == 'delete' %}
+                            <span class="badge bg-danger"><i class="fas fa-trash me-1"></i>Delete</span>
+                            {% elif activity.action == 'approve' %}
+                            <span class="badge bg-success"><i class="fas fa-check me-1"></i>Approve</span>
+                            {% elif activity.action == 'reject' %}
+                            <span class="badge bg-danger"><i class="fas fa-times me-1"></i>Reject</span>
+                            {% elif activity.action == 'view' %}
+                            <span class="badge bg-info"><i class="fas fa-eye me-1"></i>View</span>
+                            {% elif activity.action == 'share' %}
+                            <span class="badge bg-primary"><i class="fas fa-share-alt me-1"></i>Share</span>
+                            {% elif activity.action == 'register' %}
+                            <span class="badge bg-primary"><i class="fas fa-user-plus me-1"></i>Register</span>
+                            {% elif activity.action == 'force_logout' %}
+                            <span class="badge bg-danger"><i class="fas fa-power-off me-1"></i>Force Logout</span>
+                            {% else %}
+                            <span class="badge bg-secondary">{{ activity.action|title }}</span>
+                            {% endif %}
+                        </td>
+                        <td class="text-muted">{{ activity.description|truncatechars:80 }}</td>
+                        <td>
+                            {% if activity.document %}
+                            <a href="{% url 'document_detail' activity.document.id %}" class="text-decoration-none">
+                                <i class="fas fa-file-alt me-1"></i>
+                                {{ activity.document.title|truncatechars:30 }}
+                            </a>
+                            {% else %}
+                            <span class="text-muted">-</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            <div class="small">
+                                <div>{{ activity.timestamp|date:"Y-m-d" }}</div>
+                                <div class="text-muted">{{ activity.timestamp|time:"H:i:s" }}</div>
+                            </div>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="5" class="text-center py-5">
+                            <i class="fas fa-clipboard-list fa-4x text-muted mb-3 d-block"></i>
+                            <h5 class="text-muted">No activities recorded</h5>
+                            <p class="text-muted">Activities will appear here once users start using the system</p>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    {% if activities.has_other_pages %}
+    <div class="card-footer bg-white border-0 pb-4">
+        <nav>
+            <ul class="pagination justify-content-center mb-0">
+                {% if activities.has_previous %}
+                <li class="page-item"><a class="page-link" href="?page={{ activities.previous_page_number }}">Previous</a></li>
+                {% endif %}
+                {% for i in activities.paginator.page_range %}
+                <li class="page-item {% if activities.number == i %}active{% endif %}">
+                    <a class="page-link" href="?page={{ i }}">{{ i }}</a>
+                </li>
+                {% endfor %}
+                {% if activities.has_next %}
+                <li class="page-item"><a class="page-link" href="?page={{ activities.next_page_number }}">Next</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
+    {% endif %}
+</div>
+
+<style>
+    .table th, .table td {
+        vertical-align: middle;
+        padding: 1rem;
+    }
+    .table-hover tbody tr:hover {
+        background-color: rgba(102, 126, 234, 0.05);
+    }
+    .rounded-4 {
+        border-radius: 1rem !important;
+    }
+    .bg-opacity-10 {
+        opacity: 0.1;
+    }
+    .form-select, .form-control {
+        border: 2px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 10px 15px;
+    }
+    .form-select:focus, .form-control:focus {
+        border-color: #667eea;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        outline: none;
+    }
+</style>
+{% endblock %}

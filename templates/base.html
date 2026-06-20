@@ -1,0 +1,857 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMS - Document Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f0f2f5;
+        }
+
+        .sidebar-logo img {
+            max-width: 180px;
+            height: auto;
+            transition: .3s;
+        }
+
+        .sidebar-logo img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 280px;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        /* REPORTS MENU */
+
+        .reports-toggle {
+            font-size: 18px;
+            font-weight: 600;
+            color: white !important;
+        }
+
+        .reports-submenu {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 10px;
+        }
+
+        .reports-submenu li {
+            margin: 8px 0;
+        }
+
+        .reports-submenu a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            padding: 12px 16px;
+
+            color: #d1d5db;
+            text-decoration: none;
+
+            font-size: 15px;
+            /* កែត្រង់នេះ */
+            font-weight: 500;
+
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .reports-submenu a:hover {
+            background: rgba(96, 165, 250, 0.25);
+            color: #ffffff;
+
+            transform: translateX(5px);
+        }
+
+        .reports-submenu i {
+            width: 20px;
+            text-align: center;
+        }
+
+        .reports-submenu a.active {
+            background: #3b82f6;
+            color: white;
+        }
+
+        .sidebar.collapsed {
+            width: 80px;
+        }
+
+        .sidebar.collapsed .nav-link span,
+        .sidebar.collapsed .sidebar-header h4,
+        .sidebar.collapsed .sidebar-header p,
+        .sidebar.collapsed .dropdown-toggle::after,
+        .sidebar.collapsed .submenu {
+            display: none;
+        }
+
+        .sidebar.collapsed .nav-link {
+            justify-content: center;
+            padding: 15px 0;
+        }
+
+        .sidebar.collapsed .nav-link i {
+            margin-right: 0;
+            font-size: 20px;
+        }
+
+        /* Collapse Sidebar */
+        .sidebar.collapsed {
+            width: 80px;
+        }
+
+        /* លាក់អក្សរ Menu */
+        .sidebar.collapsed .nav-link span {
+            display: none;
+        }
+
+        /* លាក់ Reports Submenu ទាំងមូល */
+        .sidebar.collapsed .submenu,
+        .sidebar.collapsed .collapse,
+        .sidebar.collapsed #reportsMenu {
+            display: none !important;
+        }
+
+        /* លាក់ Dropdown Arrow */
+        .sidebar.collapsed .dropdown-toggle::after {
+            display: none;
+        }
+
+        /* Center Icons */
+        .sidebar.collapsed .nav-link {
+            justify-content: center;
+            padding: 14px 0;
+        }
+
+        .sidebar.collapsed .nav-link i {
+            margin-right: 0 !important;
+            font-size: 20px;
+        }
+
+        .sidebar.collapsed .nav-link span,
+        .sidebar.collapsed .nav-item span {
+            display: none !important;
+        }
+
+        .sidebar.collapsed .nav-link {
+            justify-content: center;
+            padding: 14px 0;
+        }
+
+        .sidebar.collapsed .nav-link i {
+            margin-right: 0 !important;
+        }
+
+        .sidebar .logo {
+            padding: 25px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .sidebar .logo h3 {
+            font-size: 22px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #fff, #a8c0ff);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .sidebar .logo span {
+            font-size: 12px;
+            color: #a8c0ff;
+        }
+
+        .sidebar .nav-menu {
+            padding: 20px 0;
+        }
+
+        .sidebar .nav-item {
+            margin: 8px 15px;
+            border-radius: 12px;
+            transition: all 0.3s;
+        }
+
+        .sidebar .nav-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .sidebar .nav-item.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .sidebar .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            padding: 12px 16px;
+            margin: 6px 10px;
+
+            color: rgba(255, 255, 255, .85);
+            border-radius: 12px;
+
+            transition: all .3s ease;
+        }
+
+        .sidebar .nav-link:hover {
+            background: rgba(255, 255, 255, .12);
+            color: #fff;
+
+            transform: translateX(6px);
+        }
+
+        .sidebar .nav-link.active {
+            background: rgba(79, 140, 255, 0.35);
+
+            color: #fff;
+
+            box-shadow: 0 4px 12px rgba(79, 140, 255, .25);
+        }
+
+        .sidebar .nav-link i {
+            transition: all .3s ease;
+        }
+
+        .sidebar .nav-link:hover i {
+            transform: scale(1.15);
+        }
+
+        .sidebar-divider {
+            border-top: 1px solid rgba(255, 255, 255, .15);
+            margin: 18px 15px;
+        }
+
+        .logout-btn {
+            background: none;
+            border: none;
+            color: rgba(255, 0, 0, 0.8);
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        .logout-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 280px;
+            transition: all 0.3s ease;
+            min-height: 100vh;
+        }
+
+        .main-content.expanded {
+            margin-left: 80px;
+        }
+
+        .top-header {
+            background: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        .toggle-btn {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #1a1a2e;
+        }
+
+        .user-avatar {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Card Styles */
+        .card {
+            border-radius: 12px;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .badge-status {
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .badge-approved {
+            background: #10b981;
+            color: white;
+        }
+
+        .badge-pending {
+            background: #f59e0b;
+            color: white;
+        }
+
+        .badge-rejected {
+            background: #ef4444;
+            color: white;
+        }
+
+        .badge-draft {
+            background: #6b7280;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%);
+            }
+
+            .sidebar.active {
+                transform: translateX(0);
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+
+        <div class="sidebar-header">
+
+            <img src="{% static 'images/logo.png' %}" class="img-fluid" alt="DMS Logo">
+
+        </div>
+        <div class="nav-menu">
+            <div class="nav-item">
+                <a href="{% url 'dashboard' %}" class="nav-link">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="{% url 'document_list' %}" class="nav-link">
+                    <i class="fas fa-folder-open"></i>
+                    <span>All Documents</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="{% url 'document_upload' %}" class="nav-link">
+                    <i class="fas fa-upload"></i>
+                    <span>Upload</span>
+                </a>
+            </div>
+            <div class="nav-item"><a href="{% url 'active_sessions' %}" class="nav-link"><i
+                        class="fas fa-shield-alt"></i><span>Security</span></a></div>
+            <div class="nav-item"><a href="{% url 'profile' %}" class="nav-link"><i
+                        class="fas fa-user"></i><span>Profile</span></a></div>
+            {% if user.is_superuser %}
+            <div class="nav-item">
+                <a href="{% url 'pending_approvals' %}" class="nav-link">
+                    <i class="fas fa-clock"></i>
+                    <span>Pending Approvals</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="{% url 'category_manage' %}" class="nav-link">
+                    <i class="fas fa-tags"></i>
+                    <span>Categories</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="{% url 'activity_log' %}" class="nav-link">
+                    <i class="fas fa-history"></i>
+                    <span>Activity Log</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="/admin/" class="nav-link">
+                    <i class="fas fa-user-shield"></i>
+                    <span>Admin Panel</span>
+                </a>
+            </div>
+            {% endif %}
+            <div class="nav-item">
+                <form method="post" action="{% url 'logout' %}" style="margin: 0;">
+                    {% csrf_token %}
+                    <button type="submit" class="logout-btn">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Logout</span>
+                    </button>
+                </form>
+            </div>
+
+            <hr class="sidebar-divider">
+
+
+            <div class="nav-item">
+                {% if user.is_superuser %}
+                <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#apiModal">
+                    <i class="fas fa-code"></i>
+                    <span>API Dashboard</span>
+                </a>
+                {% endif %}
+            </div>
+
+
+            {% if request.user.is_superuser %}
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle reports-toggle" href="#" data-bs-toggle="collapse"
+                    data-bs-target="#reportsMenu">
+
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Reports</span>
+                </a>
+
+                <div id="reportsMenu" class="collapse show">
+                    <ul class="reports-submenu">
+
+                        <li>
+                            <a href="{% url 'category_reports' %}">
+                                <i class="fas fa-folder-open"></i>
+                                Category Reports
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{% url 'document_reports' %}">
+                                <i class="fas fa-file-alt"></i>
+                                Document Reports
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{% url 'user_activity_reports' %}">
+                                <i class="fas fa-users"></i>
+                                User Activity
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </li>
+
+            <div class="nav-item">
+                <a href="#"
+                class="nav-link"
+                data-bs-toggle="modal"
+                data-bs-target="#aboutMeModal">
+
+                    <i class="fas fa-user-circle"></i>
+                    <span>About Me</span>
+
+                </a>
+            </div>
+
+            {% endif %}
+
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+    
+
+    <!-- Main Content -->
+    <div class="main-content" id="mainContent">
+        <div class="top-header">
+            <button class="toggle-btn" id="toggleSidebar">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="d-flex align-items-center gap-3">
+                <div class="user-avatar">
+                    {{ user.username|make_list|first|upper }}
+                </div>
+                <div>
+                    <div style="font-weight: 600;">{{ user.username }}</div>
+                    <small style="color: #666;">
+                        {% if user.is_superuser %}
+                        Administrator
+                        {% elif user.is_staff %}
+                        Manager
+                        {% else %}
+                        User
+                        {% endif %}
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-4">
+            {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+            {% endfor %}
+            {% endif %}
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+
+    <div class="modal fade" id="apiModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">
+                        <i class="fas fa-plug"></i>
+                        Dashboard API
+                    </h5>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal">
+                    </button>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="row text-center mb-3">
+
+                        <div class="col-md-4">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body">
+                                    <small class="text-muted">API Endpoint</small>
+                                    <h6 class="mb-0 text-primary">
+                                        /api/dashboard/
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body">
+                                    <small class="text-muted">Last Updated</small>
+                                    <h6 id="api-time" class="mb-0">
+                                        --:--:--
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body">
+                                    <small class="text-muted">Response Time</small>
+                                    <h6 id="api-speed" class="mb-0 text-success">
+                                        --
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex gap-2 mb-3">
+
+                        <button class="btn btn-primary" onclick="loadDashboardAPI()">
+                            <i class="fas fa-sync-alt"></i>
+                            Refresh
+                        </button>
+
+                        <button id="copy-btn" onclick="copyApiResponse()" class="btn btn-outline-secondary">
+                            <i class="fas fa-copy"></i>
+                            Copy JSON
+                        </button>
+
+                    </div>
+
+                    <hr>
+
+                    <h6>Live Response</h6>
+
+                    <pre id="api-response" class="bg-light p-3 rounded border" style="max-height:300px; overflow:auto;">
+Loading...
+</pre>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('toggleSidebar').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.toggle('collapsed');
+            document.getElementById('mainContent').classList.toggle('expanded');
+        });
+
+        // Mobile sidebar
+        if (window.innerWidth <= 768) {
+            document.getElementById('toggleSidebar').addEventListener('click', function () {
+                document.getElementById('sidebar').classList.toggle('active');
+            });
+        }
+    </script>
+    {% block extra_js %}{% endblock %}
+
+    <script>
+
+        function loadDashboardAPI() {
+
+            const box = document.getElementById("api-response");
+            const startTime = performance.now();
+
+            box.textContent = "Loading...";
+
+            fetch("/api/dashboard/")
+                .then(res => res.json())
+                .then(data => {
+
+                    box.textContent =
+                        JSON.stringify(data, null, 4);
+
+                    const time =
+                        document.getElementById("api-time");
+
+                    const endTime = performance.now();
+
+                    document.getElementById("api-speed").textContent =
+                        (endTime - startTime).toFixed(0) + " ms";
+
+                    if (time) {
+                        time.textContent =
+                            new Date().toLocaleTimeString();
+                    }
+
+                })
+                .catch(err => {
+
+                    console.error(err);
+
+                    box.textContent = "API Error";
+
+                    document.getElementById("api-status").innerHTML =
+                        '<i class="fas fa-times-circle"></i> Offline';
+
+                    document.getElementById("api-status").className =
+                        "badge bg-danger";
+
+                });
+        }
+
+        function copyApiResponse() {
+
+            const responseText =
+                document.getElementById('api-response').textContent;
+
+            const btn =
+                document.getElementById('copy-btn');
+
+            navigator.clipboard.writeText(responseText)
+                .then(() => {
+
+                    btn.innerHTML =
+                        '<i class="fas fa-check"></i> Copied';
+
+                    btn.classList.remove('btn-outline-secondary');
+                    btn.classList.add('btn-success');
+
+                    setTimeout(() => {
+
+                        btn.innerHTML =
+                            '<i class="fas fa-copy"></i> Copy';
+
+                        btn.classList.remove('btn-success');
+                        btn.classList.add('btn-outline-secondary');
+
+                    }, 2000);
+
+                })
+                .catch(err => {
+
+                    console.error(err);
+
+                    btn.innerHTML =
+                        '<i class="fas fa-times"></i> Failed';
+
+                    btn.classList.remove('btn-outline-secondary');
+                    btn.classList.add('btn-danger');
+
+                });
+
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            document.querySelector('[data-bs-target="#apiModal"]')
+                .addEventListener("click", function () {
+
+                    setTimeout(loadDashboardAPI, 300);
+
+                });
+
+        });
+    </script>
+
+
+<!-- About Team Modal -->
+<div class="modal fade" id="aboutMeModal" tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content border-0 shadow">
+
+            <div class="modal-header bg-primary text-white">
+
+                <h5 class="modal-title">
+                    <i class="fas fa-users me-2"></i>
+                    DMS Development Team
+                </h5>
+
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <div class="text-center mb-4">
+
+                    <img src="{% static 'images/logo.png' %}"
+                         width="90"
+                         class="mb-3">
+
+                    <h4 class="fw-bold">
+                        Document Management System
+                    </h4>
+
+                    <p class="text-muted">
+                        Web Technology & Development Project
+                    </p>
+
+                </div>
+
+                <div class="card mb-3 border-0 bg-light">
+
+                    <div class="card-body">
+
+                        <h6 class="text-primary">
+                            <i class="fas fa-chalkboard-teacher me-2"></i>
+                            Lecturer
+                        </h6>
+
+                        <h4 class="mb-0">
+                            Keo Tongheng
+                        </h4>
+
+                    </div>
+
+                </div>
+
+                <div class="card border-0 bg-light">
+
+                    <div class="card-body">
+
+                        <h6 class="text-success">
+                            <i class="fas fa-users me-2"></i>
+                            Team Members
+                        </h6>
+
+                        <ul class="list-group mt-3">
+
+                            <li class="list-group-item">
+                                1. Kann Rangsey
+                            </li>
+
+                            <li class="list-group-item">
+                                2. Tob Chenda
+                            </li>
+
+                            <li class="list-group-item">
+                                3. Seang Lyheang
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <small class="text-muted">
+                    DMS Version 1.0 • 2026
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</body>
+
+</html>

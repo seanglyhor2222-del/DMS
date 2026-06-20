@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card border-0 shadow-sm rounded-4">
+            <div class="card-header bg-white border-0 pt-4">
+                <h4 class="fw-bold mb-0">
+                    <i class="fas fa-upload text-primary me-2"></i>Upload New Document
+                </h4>
+                <p class="text-muted mt-2">Fill in the information below to upload your document</p>
+            </div>
+            <div class="card-body p-4">
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">
+                            <i class="fas fa-heading me-1"></i>Document Title <span class="text-danger">*</span>
+                        </label>
+                        <input type="text" name="title" class="form-control" placeholder="Enter document title" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">
+                            <i class="fas fa-tag me-1"></i>Category
+                        </label>
+                        <select name="category" class="form-select">
+                            <option value="">Select Category</option>
+                            {% for cat in categories %}
+                            <option value="{{ cat.id }}">{{ cat.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">
+                            <i class="fas fa-align-left me-1"></i>Description
+                        </label>
+                        <textarea name="description" class="form-control" rows="4" placeholder="Enter document description..."></textarea>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">
+                            <i class="fas fa-file me-1"></i>File <span class="text-danger">*</span>
+                        </label>
+                        <input type="file" name="file" class="form-control" required>
+                        <small class="text-muted">Supported formats: PDF, DOC, DOCX, XLS, XLSX, JPG, PNG</small>
+                    </div>
+                    
+                    <div class="mb-4 p-3 bg-light rounded-3">
+                        <div class="form-check">
+                            <input type="checkbox" name="need_approval" class="form-check-input" id="needApproval" checked>
+                            <label class="form-check-label fw-semibold" for="needApproval">
+                                <i class="fas fa-clock text-warning me-1"></i>Need Approval
+                            </label>
+                            <p class="small text-muted mt-1 ms-4 mb-0">
+                                If checked, this document will need admin approval before being published.
+                                <br>If unchecked, document will be saved as Draft.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <div class="d-flex justify-content-end gap-2 mt-3">
+                        <a href="{% url 'document_list' %}" class="btn btn-secondary px-4">
+                            <i class="fas fa-times me-1"></i>Cancel
+                        </a>
+                        <button type="submit" class="btn btn-primary px-4">
+                            <i class="fas fa-upload me-1"></i>Upload
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .form-control, .form-select {
+        border: 2px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 10px 15px;
+    }
+    .form-control:focus, .form-select:focus {
+        border-color: #667eea;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+    .rounded-4 {
+        border-radius: 1rem !important;
+    }
+    .bg-light {
+        background-color: #f8f9fa !important;
+    }
+</style>
+{% endblock %}

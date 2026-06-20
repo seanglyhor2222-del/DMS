@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row mb-4">
+    <div class="col">
+        <h2><i class="fas fa-users me-2"></i>User Management</h2>
+    </div>
+    <div class="col text-end">
+        <a href="{% url 'user_create' %}" class="btn btn-primary">
+            <i class="fas fa-plus me-2"></i>Add New User
+        </a>
+    </div>
+</div>
+
+<div class="content-card">
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead class="table-light">
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Department</th>
+                    <th>Status</th>
+                    <th>Date Joined</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for u in users %}
+                <tr>
+                    <td>{{ u.id }}</td>
+                    <td><strong>{{ u.username }}</strong></td>
+                    <td>{{ u.get_full_name|default:'-' }}</td>
+                    <td>{{ u.email }}</td>
+                    <td>
+                        <span class="badge {% if u.role.role_name == 'admin' %}bg-danger{% elif u.role.role_name == 'manager' %}bg-warning{% else %}bg-primary{% endif %}">
+                            {{ u.role.role_name|default:'user'|title }}
+                        </span>
+                    </td>
+                    <td>{{ u.department|default:'-' }}</td>
+                    <td>
+                        {% if u.is_active %}
+                        <span class="badge bg-success">Active</span>
+                        {% else %}
+                        <span class="badge bg-secondary">Inactive</span>
+                        {% endif %}
+                    </td>
+                    <td>{{ u.date_joined|date:"Y-m-d" }}</td>
+                    <td>
+                        <div class="btn-group btn-group-sm">
+                            <a href="{% url 'user_activity_log' u.id %}" class="btn btn-outline-info" title="View Activity">
+                                <i class="fas fa-history"></i>
+                            </a>
+                            <a href="{% url 'user_edit' u.id %}" class="btn btn-outline-warning" title="Edit">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            {% if u != user %}
+                            <a href="{% url 'user_delete' u.id %}" class="btn btn-outline-danger" title="Delete" onclick="return confirm('Are you sure?')">
+                                <i class="fas fa-trash"></i>
+                            </a>
+                            {% endif %}
+                        </div>
+                    </td>
+                </tr>
+                {% empty %}
+                <tr><td colspan="9" class="text-center py-4">No users found</td></tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

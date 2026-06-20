@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2 class="fw-bold"><i class="fas fa-folder-open text-primary me-2"></i>All Documents</h2>
+        <p class="text-muted mb-0">Manage and organize all your documents</p>
+    </div>
+    <div>
+        <a href="{% url 'document_upload' %}" class="btn btn-primary">
+            <i class="fas fa-upload me-2"></i>Upload Document
+        </a>
+    </div>
+</div>
+
+<!-- Search and Filter -->
+<div class="card mb-4">
+    <div class="card-body">
+        <form method="get" class="row g-3">
+            <div class="col-md-5">
+                <input type="text" name="search" class="form-control" placeholder="Search by title..." value="{{ search_query|default:'' }}">
+            </div>
+            <div class="col-md-3">
+                <select name="category" class="form-select">
+                    <option value="">All Categories</option>
+                    {% for cat in categories %}
+                    <option value="{{ cat.id }}" {% if current_category == cat.id|stringformat:"s" %}selected{% endif %}>{{ cat.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-2">
+                <select name="status" class="form-select">
+                    <option value="">All Status</option>
+                    <option value="draft" {% if current_status == 'draft' %}selected{% endif %}>Draft</option>
+                    <option value="pending" {% if current_status == 'pending' %}selected{% endif %}>Pending</option>
+                    <option value="approved" {% if current_status == 'approved' %}selected{% endif %}>Approved</option>
+                    <option value="rejected" {% if current_status == 'rejected' %}selected{% endif %}>Rejected</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary w-100">Filter</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Documents Table -->
+<div class="card">
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table table-hover mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th>Document Name</th>
+                        <th>Category</th>
+                        <th>Version</th>
+                        <th>Status</th>
+                        <th>Uploaded</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for doc in documents %}
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                {% if doc.extension == 'pdf' %}
+                                    <i class="fas fa-file-pdf text-danger me-2"></i>
+
+                                {% elif doc.extension == 'doc' or doc.extension == 'docx' %}
+                                    <i class="fas fa-file-word text-primary me-2"></i>
+
+                                {% elif doc.extension == 'xls' or doc.extension == 'xlsx' %}
+                                    <i class="fas fa-file-excel text-success me-2"></i>
+
+                                {% elif doc.extension == 'ppt' or doc.extension == 'pptx' %}
+                                    <i class="fas fa-file-powerpoint text-warning me-2"></i>
+
+                                {% elif doc.extension == 'jpg' or doc.extension == 'jpeg' or doc.extension == 'png' %}
+                                    <i class="fas fa-file-image text-info me-2"></i>
+
+                                {% else %}
+                                    <i class="fas fa-file text-secondary me-2"></i>
+                                {% endif %}
+                                <a href="{% url 'document_detail' doc.id %}" class="text-decoration-none">
+                                    {{ doc.title }}
+                                </a>
+                            </div>
+                        </td>
+                        <td>{{ doc.category.name|default:'-' }}</td>
+                        <td><span class="badge bg-info">v{{ doc.version }}</span></td>
+                        <td>
+                            {% if doc.status == 'approved' %}
+                            <span class="badge bg-success">Approved</span>
+                            {% elif doc.status == 'pending' %}
+                            <span class="badge bg-warning">Pending</span>
+                            {% elif doc.status == 'rejected' %}
+                            <span class="badge bg-danger">Rejected</span>
+                            {% else %}
+                            <span class="badge bg-secondary">Draft</span>
+                            {% endif %}
+                        </td>
+                        <td>{{ doc.created_at|date:"Y-m-d" }}</td>
+                        <td>
+                            <div class="btn-group btn-group-sm">
+                                {% if doc.file %}
+                                <a href="{{ doc.file.url }}"
+                                target="_blank"
+                                class="btn btn-outline-primary"
+                                title="View">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                {% else %}
+                                <button class="btn btn-outline-secondary" disabled>
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                {% endif %}
+                                <a href="{% url 'document_download' doc.id %}" class="btn btn-outline-success" title="Download">
+                                    <i class="fas fa-download"></i>
+                                </a>
+                                {% if user.is_superuser or doc.owner == user %}
+                                <a href="{% url 'document_edit' doc.id %}" class="btn btn-outline-warning" title="Edit">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <a href="{% url 'document_delete' doc.id %}" class="btn btn-outline-danger" title="Delete" onclick="return confirm('Are you sure?')">
+                                    <i class="fas fa-trash"></i>
+                                </a>
+                                {% endif %}
+                            </div>
+                         </td>
+                     </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="6" class="text-center py-5">
+                            <i class="fas fa-folder-open fa-4x text-muted mb-3 d-block"></i>
+                            <h5>No documents found</h5>
+                            <p class="text-muted">Upload your first document to get started</p>
+                            <a href="{% url 'document_upload' %}" class="btn btn-primary mt-2">Upload Document</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!-- Pagination -->
+    {% if documents.has_other_pages %}
+    <div class="card-footer bg-white">
+        <nav>
+            <ul class="pagination justify-content-center mb-0">
+                {% if documents.has_previous %}
+                <li class="page-item"><a class="page-link" href="?page={{ documents.previous_page_number }}">Previous</a></li>
+                {% endif %}
+                {% for i in documents.paginator.page_range %}
+                <li class="page-item {% if documents.number == i %}active{% endif %}">
+                    <a class="page-link" href="?page={{ i }}">{{ i }}</a>
+                </li>
+                {% endfor %}
+                {% if documents.has_next %}
+                <li class="page-item"><a class="page-link" href="?page={{ documents.next_page_number }}">Next</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 20px;
+            text-align: center;
+            border-radius: 12px 12px 0 0;
+            color: white;
+        }
+        .content {
+            padding: 20px;
+        }
+        .status-approved {
+            background: #10b981;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        .status-rejected {
+            background: #ef4444;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        .button {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        .footer {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 12px;
+            color: #999;
+            border-top: 1px solid #e5e7eb;
+        }
+        .comment-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Document Management System</h2>
+        </div>
+        <div class="content">
+            <h3>Dear {{ owner.get_full_name|default:owner.username }},</h3>
+            
+            <p>Your document <strong>"{{ document.title }}"</strong> has been 
+            {% if status == 'approved' %}
+                <span class="status-approved">APPROVED</span>
+            {% else %}
+                <span class="status-rejected">REJECTED</span>
+            {% endif %}
+            </p>
+            
+            <table style="width: 100%; margin: 15px 0;">
+                <tr>
+                    <td style="padding: 8px 0;"><strong>Document Title:</strong></td>
+                    <td>{{ document.title }}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px 0;"><strong>Version:</strong></td>
+                    <td>v{{ document.version }}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px 0;"><strong>Category:</strong></td>
+                    <td>{{ document.category.name|default:'Uncategorized' }}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px 0;"><strong>Submitted Date:</strong></td>
+                    <td>{{ document.created_at|date:"Y-m-d H:i" }}</td>
+                </tr>
+            </table>
+            
+            {% if comment %}
+            <div class="comment-box">
+                <strong>Comment from Admin:</strong>
+                <p style="margin: 10px 0 0 0;">{{ comment }}</p>
+            </div>
+            {% endif %}
+            
+            <p>
+                <a href="{{ site_url }}/documents/{{ document.id }}/" class="button">
+                    View Document Details
+                </a>
+            </p>
+        </div>
+        <div class="footer">
+            <p>This is an automated notification from Document Management System.</p>
+            <p>&copy; 2026 DMS System. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container-fluid">
+
+    <h2 class="mb-4">
+        Category Reports
+    </h2>
+
+    <form method="GET" class="mb-3">
+        <input
+            type="text"
+            name="search"
+            class="form-control"
+            placeholder="Search Category"
+            value="{{ request.GET.search }}"
+        >
+    </form>
+
+    <div class="card">
+
+        <table class="table">
+
+            <tr>
+                <th>Category</th>
+            </tr>
+
+            {% for category in categories %}
+            <tr>
+                <td>
+                    <a href="{% url 'category_report_detail' category.id %}">
+                        {{ category.name }}
+                    </a>
+                </td>
+            </tr>
+            {% endfor %}
+
+        </table>
+
+    </div>
+
+</div>
+
+{% endblock %}
