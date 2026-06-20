@@ -1,0 +1,2298 @@
+[
+{
+    "model": "activities.activitylog",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out",
+        "ip_address": "127.0.0.1",
+        "user_agent": null,
+        "session_key": null,
+        "timestamp": "2026-06-13T18:42:34.066Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in successfully",
+        "ip_address": "127.0.0.1",
+        "user_agent": null,
+        "session_key": null,
+        "timestamp": "2026-06-13T18:42:36.321Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 3,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-13T18:44:51.342Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 4,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-13T18:44:53.164Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 5,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-13T18:45:17.281Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 6,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "login",
+        "description": "User kannrangsey logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-13T18:45:21.681Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 7,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "logout",
+        "description": "User kannrangsey logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-13T18:47:23.461Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 8,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "login",
+        "description": "User kannrangsey logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-13T18:47:25.678Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 9,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "logout",
+        "description": "User kannrangsey logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-13T18:48:21.073Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 10,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "login",
+        "description": "User kannrangsey logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-13T18:48:23.054Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 11,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "login",
+        "description": "User kannrangsey logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-13T18:51:11.791Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 12,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "login",
+        "description": "User kannrangsey logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-13T18:52:04.033Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 13,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "force_logout",
+        "description": "User kannrangsey force logged out 0 other session(s)",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-13T18:59:04.867Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 14,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "logout",
+        "description": "User kannrangsey logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-13T18:59:18.028Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 15,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "login",
+        "description": "User kannrangsey logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": "fbaj3a8p6ai43vdvij7i7qe558m17pyi",
+        "timestamp": "2026-06-13T18:59:20.110Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 16,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "logout",
+        "description": "User kannrangsey logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-13T18:59:53.730Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 17,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": "t3yp1v2y83qz0ssvhrygyte0v53497qt",
+        "timestamp": "2026-06-13T18:59:57.305Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 18,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-13T19:16:22.923Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 19,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": "7pid57ljb046wract2vkrmbepezytk6t",
+        "timestamp": "2026-06-13T19:16:24.936Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 20,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-13T19:23:57.902Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 21,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "login",
+        "description": "User kannrangsey logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": "8m9x3l0zqll6kcsbxzcu7gj5yk1mgrcl",
+        "timestamp": "2026-06-13T19:24:01.456Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 22,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "logout",
+        "description": "User kannrangsey logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-13T19:24:37.296Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 23,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": "e1hiutvrzfkysr11kogx92x7xphh9sy6",
+        "timestamp": "2026-06-13T19:24:42.743Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 24,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-13T19:25:36.555Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 25,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": "53tl28sa28tmtkd2en8066kucvx9waam",
+        "timestamp": "2026-06-13T19:25:39.217Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 26,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-13T19:25:40.805Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 27,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "login",
+        "description": "User kannrangsey logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": "dtbt6saqekxznacywjhbkp2eb3skbixt",
+        "timestamp": "2026-06-13T19:25:46.002Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 28,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "logout",
+        "description": "User kannrangsey logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-13T19:26:23.055Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 29,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "login",
+        "description": "User kannrangsey logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": "7qucryx0um13fpzz4nd160sxkzaygs67",
+        "timestamp": "2026-06-13T19:26:25.453Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 30,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "logout",
+        "description": "User kannrangsey logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-13T19:26:27.076Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 31,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": "jcqj0rj8b92xbdqj4t2fomql0m44vt04",
+        "timestamp": "2026-06-13T19:26:32.428Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 32,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T02:44:40.080Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 33,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T03:14:47.154Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 34,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "login",
+        "description": "User kannrangsey logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": "rhf3q9uhoyjraul5s69b39ihsglyriqk",
+        "timestamp": "2026-06-14T03:15:02.392Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 35,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "logout",
+        "description": "User kannrangsey logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T03:15:31.426Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 36,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": "5vnsgq7oy10ltyec88ztotze169nlqjc",
+        "timestamp": "2026-06-14T03:15:36.239Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 37,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T03:18:17.272Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 38,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "login",
+        "description": "User kannrangsey logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": "kxwh2ryose4nz0i3b2ldfzuqxufa5gxs",
+        "timestamp": "2026-06-14T03:18:21.304Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 39,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "logout",
+        "description": "User kannrangsey logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T03:25:26.208Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 40,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "login",
+        "description": "User kannrangsey logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": "b9p5syty2m43qk4bmtdepwr56kwkfw8j",
+        "timestamp": "2026-06-14T03:25:28.553Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 41,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "logout",
+        "description": "User kannrangsey logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T03:25:53.596Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 42,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": "d7bz5rjkgbms6v44kaih78l8r9ex5nk3",
+        "timestamp": "2026-06-14T03:25:59.504Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 43,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T03:28:47.178Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 44,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": "i0u83qdnwy9un8c9dj43nx0c01zpmja1",
+        "timestamp": "2026-06-14T03:41:27.178Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 45,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T03:43:41.795Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 46,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T03:47:05.238Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 47,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T03:48:49.585Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 48,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T03:56:07.666Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 49,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T04:13:33.543Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 50,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T04:16:23.596Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 51,
+    "fields": {
+        "user": 5,
+        "document": null,
+        "action": "logout",
+        "description": "User kann logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T04:39:39.891Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 52,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": "yvct4fhp5qpiji8o0t5pv3jxahqh6rhu",
+        "timestamp": "2026-06-14T04:39:57.965Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 53,
+    "fields": {
+        "user": 5,
+        "document": null,
+        "action": "logout",
+        "description": "User kann logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T04:50:39.646Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 54,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T04:50:48.128Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 55,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": "7ckya6rgla08wtbe0hxpj10fn242nyam",
+        "timestamp": "2026-06-14T04:50:50.781Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 56,
+    "fields": {
+        "user": 5,
+        "document": null,
+        "action": "logout",
+        "description": "User kann logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T04:53:37.471Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 57,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T05:23:03.140Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 58,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T05:23:13.782Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 59,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T05:26:10.332Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 60,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T05:26:12.740Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 61,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T05:28:13.767Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 62,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T05:28:17.027Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 63,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T05:30:59.330Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 64,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T05:33:23.322Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 65,
+    "fields": {
+        "user": 5,
+        "document": null,
+        "action": "logout",
+        "description": "User kann logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T05:38:28.545Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 66,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T05:38:46.249Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 67,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T05:39:09.557Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 68,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T05:40:36.007Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 69,
+    "fields": {
+        "user": 4,
+        "document": null,
+        "action": "login",
+        "description": "User kannrangsey logged in from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T05:40:43.124Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 70,
+    "fields": {
+        "user": 8,
+        "document": null,
+        "action": "logout",
+        "description": "User lyheang logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T05:55:12.897Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 71,
+    "fields": {
+        "user": 8,
+        "document": null,
+        "action": "logout",
+        "description": "User lyheang logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T05:55:23.397Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 72,
+    "fields": {
+        "user": 8,
+        "document": null,
+        "action": "logout",
+        "description": "User lyheang logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T05:55:46.444Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 73,
+    "fields": {
+        "user": 8,
+        "document": null,
+        "action": "logout",
+        "description": "User lyheang logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T05:56:20.246Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 74,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T05:57:09.614Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 75,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T05:57:52.727Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 76,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T05:58:06.248Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 77,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T05:58:11.636Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 78,
+    "fields": {
+        "user": 8,
+        "document": null,
+        "action": "logout",
+        "description": "User lyheang logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T05:59:04.226Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 79,
+    "fields": {
+        "user": 8,
+        "document": null,
+        "action": "logout",
+        "description": "User lyheang logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T05:59:14.797Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 80,
+    "fields": {
+        "user": 8,
+        "document": null,
+        "action": "logout",
+        "description": "User lyheang logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T06:01:48.234Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 81,
+    "fields": {
+        "user": 9,
+        "document": null,
+        "action": "register",
+        "description": "New user test01 registered from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T06:03:18.185Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 82,
+    "fields": {
+        "user": 9,
+        "document": null,
+        "action": "login",
+        "description": "User test01 logged in from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T06:03:34.610Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 83,
+    "fields": {
+        "user": 9,
+        "document": null,
+        "action": "logout",
+        "description": "User test01 logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T06:04:17.475Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 84,
+    "fields": {
+        "user": 9,
+        "document": null,
+        "action": "login",
+        "description": "User test01 logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T06:04:36.236Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 85,
+    "fields": {
+        "user": 9,
+        "document": null,
+        "action": "logout",
+        "description": "User test01 logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T06:04:38.675Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 86,
+    "fields": {
+        "user": 9,
+        "document": null,
+        "action": "login",
+        "description": "User test01 logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T06:04:52.969Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 87,
+    "fields": {
+        "user": 10,
+        "document": null,
+        "action": "register",
+        "description": "New user Test02 registered from Safari on macOS",
+        "ip_address": "10.11.9.74",
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Mobile/23F77 Safari/604.1",
+        "session_key": null,
+        "timestamp": "2026-06-14T06:24:42.563Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 88,
+    "fields": {
+        "user": 9,
+        "document": null,
+        "action": "logout",
+        "description": "User test01 logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T06:26:33.671Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 89,
+    "fields": {
+        "user": 11,
+        "document": null,
+        "action": "register",
+        "description": "New user view01 registered from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T06:27:50.427Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 90,
+    "fields": {
+        "user": 12,
+        "document": null,
+        "action": "register",
+        "description": "New user Test03 registered from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T06:29:20.459Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 91,
+    "fields": {
+        "user": 12,
+        "document": null,
+        "action": "login",
+        "description": "User Test03 logged in from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T06:32:46.366Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 92,
+    "fields": {
+        "user": 12,
+        "document": null,
+        "action": "logout",
+        "description": "User Test03 logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T06:33:55.463Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 93,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T06:34:08.708Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 94,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "10.11.9.73",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T06:40:05.845Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 95,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T06:51:17.950Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 96,
+    "fields": {
+        "user": 12,
+        "document": null,
+        "action": "login",
+        "description": "User Test03 logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T06:51:43.475Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 97,
+    "fields": {
+        "user": 12,
+        "document": null,
+        "action": "logout",
+        "description": "User Test03 logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T06:53:54.955Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 98,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T06:54:27.440Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 99,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T07:27:59.721Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 100,
+    "fields": {
+        "user": 9,
+        "document": null,
+        "action": "login",
+        "description": "User test01 logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T07:28:26.060Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 101,
+    "fields": {
+        "user": 9,
+        "document": null,
+        "action": "logout",
+        "description": "User test01 logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T07:32:46.568Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 102,
+    "fields": {
+        "user": 9,
+        "document": null,
+        "action": "login",
+        "description": "User test01 logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T07:33:08.403Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 103,
+    "fields": {
+        "user": 9,
+        "document": null,
+        "action": "logout",
+        "description": "User test01 logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T07:44:36.400Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 104,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T07:44:51.037Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 105,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T07:46:31.848Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 106,
+    "fields": {
+        "user": 9,
+        "document": null,
+        "action": "login",
+        "description": "User test01 logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T07:46:49.282Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 107,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T07:48:43.042Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 108,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T09:08:22.569Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 109,
+    "fields": {
+        "user": 9,
+        "document": null,
+        "action": "logout",
+        "description": "User test01 logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T09:08:43.326Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 110,
+    "fields": {
+        "user": 9,
+        "document": null,
+        "action": "login",
+        "description": "User test01 logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T09:09:27.990Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 111,
+    "fields": {
+        "user": 9,
+        "document": null,
+        "action": "logout",
+        "description": "User test01 logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T09:11:02.207Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 112,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T09:11:19.405Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 113,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T09:42:09.684Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 114,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "force_logout",
+        "description": "User admin force logged out session from Chrome on macOS",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T18:02:41.173Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 115,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "force_logout",
+        "description": "User admin force logged out 0 other session(s)",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T18:02:55.709Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 116,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T18:06:23.686Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 117,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T18:06:39.491Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 118,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T19:12:31.813Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 119,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-14T19:12:46.653Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 120,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-15T04:13:35.351Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 121,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-16T09:00:51.846Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 122,
+    "fields": {
+        "user": 12,
+        "document": null,
+        "action": "login",
+        "description": "User Test03 logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-16T09:01:17.850Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 123,
+    "fields": {
+        "user": 12,
+        "document": null,
+        "action": "logout",
+        "description": "User Test03 logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-16T09:06:11.543Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 124,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-16T09:06:27.998Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 125,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "force_logout",
+        "description": "User admin force logged out 0 other session(s)",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T02:44:37.386Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 126,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T02:47:02.786Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 127,
+    "fields": {
+        "user": 12,
+        "document": null,
+        "action": "login",
+        "description": "User Test03 logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T02:47:19.676Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 128,
+    "fields": {
+        "user": 12,
+        "document": null,
+        "action": "logout",
+        "description": "User Test03 logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T02:49:10.436Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 129,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T02:49:20.961Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 130,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T02:49:31.587Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 131,
+    "fields": {
+        "user": 13,
+        "document": null,
+        "action": "logout",
+        "description": "User seang logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T02:52:58.037Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 132,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T02:53:09.947Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 133,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T03:28:09.977Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 134,
+    "fields": {
+        "user": 12,
+        "document": null,
+        "action": "login",
+        "description": "User Test03 logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T03:28:22.880Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 135,
+    "fields": {
+        "user": 12,
+        "document": null,
+        "action": "logout",
+        "description": "User Test03 logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T03:30:32.366Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 136,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T03:30:56.772Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 137,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T04:27:41.860Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 138,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T04:29:05.420Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 139,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T06:15:29.676Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 140,
+    "fields": {
+        "user": 12,
+        "document": null,
+        "action": "login",
+        "description": "User Test03 logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T06:15:43.845Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 141,
+    "fields": {
+        "user": 12,
+        "document": null,
+        "action": "logout",
+        "description": "User Test03 logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T06:20:39.759Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 142,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T06:20:59.198Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 143,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T06:22:53.864Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 144,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T06:24:45.748Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 145,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.124.2 Chrome/148.0.7778.97 Electron/42.2.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T07:12:49.920Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 146,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T07:41:43.588Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 147,
+    "fields": {
+        "user": 14,
+        "document": null,
+        "action": "register",
+        "description": "New user Nomoney registered from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T07:42:43.413Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 148,
+    "fields": {
+        "user": 14,
+        "document": null,
+        "action": "login",
+        "description": "User Nomoney logged in from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T07:43:10.725Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 149,
+    "fields": {
+        "user": 14,
+        "document": null,
+        "action": "logout",
+        "description": "User Nomoney logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T07:44:22.150Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 150,
+    "fields": {
+        "user": 14,
+        "document": null,
+        "action": "login",
+        "description": "User Nomoney logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T07:44:55.210Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 151,
+    "fields": {
+        "user": 14,
+        "document": null,
+        "action": "logout",
+        "description": "User Nomoney logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T07:45:26.450Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 152,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-17T07:45:37.193Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 153,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-20T05:47:14.822Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 154,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-20T05:49:27.168Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 155,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-20T06:22:42.796Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 156,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-20T06:22:59.264Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 157,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-20T06:39:04.992Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 158,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "logout",
+        "description": "User admin logged out from Chrome on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-20T06:39:10.166Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 159,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-20T06:39:52.300Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 160,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-20T06:39:57.275Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 161,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0",
+        "session_key": null,
+        "timestamp": "2026-06-20T06:43:36.827Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 162,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "force_logout",
+        "description": "User admin force logged out session from Edge on Windows",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-20T06:45:25.555Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 163,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "force_logout",
+        "description": "User admin force logged out 1 other session(s)",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-20T07:03:28.233Z"
+    }
+},
+{
+    "model": "activities.activitylog",
+    "pk": 164,
+    "fields": {
+        "user": 1,
+        "document": null,
+        "action": "login",
+        "description": "User admin logged in with 2FA",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "session_key": null,
+        "timestamp": "2026-06-20T07:04:17.836Z"
+    }
+}
+]
