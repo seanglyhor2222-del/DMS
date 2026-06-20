@@ -1,0 +1,376 @@
+[
+{
+    "model": "accounts.role",
+    "pk": 1,
+    "fields": {
+        "role_name": "user",
+        "created_at": "2026-06-13T16:01:29.745Z"
+    }
+},
+{
+    "model": "accounts.role",
+    "pk": 2,
+    "fields": {
+        "role_name": "admin",
+        "created_at": "2026-06-13T16:01:39.676Z"
+    }
+},
+{
+    "model": "accounts.usersession",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "session_key": "yv79ldcmk0p6zfd4fvtqu9iftv681do0",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "device_info": "Chrome on Windows",
+        "login_time": "2026-06-20T06:39:57.262Z",
+        "last_activity": "2026-06-20T06:39:57.262Z",
+        "is_active": true
+    }
+},
+{
+    "model": "accounts.usersession",
+    "pk": 4,
+    "fields": {
+        "user": 1,
+        "session_key": "rj6t6l83ar5a9djberufjwjkz4cijgfe",
+        "ip_address": "127.0.0.1",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "device_info": "Chrome on Windows",
+        "login_time": "2026-06-20T07:04:17.836Z",
+        "last_activity": "2026-06-20T07:04:17.836Z",
+        "is_active": true
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$7F9FrywD9cU0weklYQCg5u$oHNnS+ucJQ7C3k9WaVNTlu4yn4hMse9cc/oAJVbre7o=",
+        "last_login": "2026-06-20T07:04:17.822Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2026-06-13T04:37:41.999Z",
+        "role": null,
+        "phone": null,
+        "department": null,
+        "otp_secret": "MZ4JBU7XMO66JFKFLKVXOUANI2T4HWBQ",
+        "otp_enabled": true,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 2,
+    "fields": {
+        "password": "!6fbSJStdu8BVu2qu1SOpgcgx1k1eK9Dvo4YjXeYI",
+        "last_login": "2026-06-13T18:03:06Z",
+        "is_superuser": false,
+        "username": "sokha_chea",
+        "first_name": "Kann",
+        "last_name": "Rangsey",
+        "email": "kannrangsiy@gmail.com",
+        "is_staff": false,
+        "is_active": false,
+        "date_joined": "2026-06-13T16:07:24Z",
+        "role": 1,
+        "phone": null,
+        "department": null,
+        "otp_secret": null,
+        "otp_enabled": false,
+        "groups": [],
+        "user_permissions": [
+            26,
+            28,
+            52,
+            33,
+            34,
+            35,
+            36
+        ]
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 3,
+    "fields": {
+        "password": "",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "testuser",
+        "first_name": "Test",
+        "last_name": "User",
+        "email": "test@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-13T17:54:25.841Z",
+        "role": null,
+        "phone": null,
+        "department": null,
+        "otp_secret": null,
+        "otp_enabled": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$CAIwVWW26839dzNWFVghMp$oRzVfl3AYd1iKWoBqXmL8YUjVOO0/BWZ0qZ6+XdeyKs=",
+        "last_login": "2026-06-14T05:40:43.122Z",
+        "is_superuser": false,
+        "username": "kannrangsey",
+        "first_name": "Kann Rangsey",
+        "last_name": "Rangsey",
+        "email": "kannrangsiy@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-13T18:24:19.793Z",
+        "role": 1,
+        "phone": "081629928",
+        "department": null,
+        "otp_secret": null,
+        "otp_enabled": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 5,
+    "fields": {
+        "password": "!TRVtuSYIn8JsCn2IT5Y51bKfpcsBM5b11jXpV3EX",
+        "last_login": "2026-06-14T05:38:33.015Z",
+        "is_superuser": false,
+        "username": "kann",
+        "first_name": "KANN",
+        "last_name": "RANGSEY",
+        "email": "kannrangsey2000@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-14T04:36:05.768Z",
+        "role": null,
+        "phone": null,
+        "department": null,
+        "otp_secret": null,
+        "otp_enabled": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 6,
+    "fields": {
+        "password": "!G3UayhiCSDOmN3NJvpk8ZosFoKvSahmVVTpMWRoo",
+        "last_login": "2026-06-14T04:54:07.169Z",
+        "is_superuser": false,
+        "username": "ting",
+        "first_name": "Ting",
+        "last_name": "SreyPhea",
+        "email": "sreypheating@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-14T04:54:07.146Z",
+        "role": null,
+        "phone": null,
+        "department": null,
+        "otp_secret": null,
+        "otp_enabled": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 7,
+    "fields": {
+        "password": "!Lp9hj3AusVyHnBS2K3cWnKj1CkjMS97JAUivc6Nm",
+        "last_login": "2026-06-14T05:24:11.822Z",
+        "is_superuser": false,
+        "username": "music",
+        "first_name": "Music",
+        "last_name": "Pleng",
+        "email": "musicpleng429@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-14T05:24:11.800Z",
+        "role": null,
+        "phone": null,
+        "department": null,
+        "otp_secret": null,
+        "otp_enabled": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 8,
+    "fields": {
+        "password": "!w7UXWP7ehLRxPpa05Yv0mPIhhZsxfzODBF2NyzS5",
+        "last_login": "2026-06-14T05:59:20.789Z",
+        "is_superuser": false,
+        "username": "lyheang",
+        "first_name": "lyHeang",
+        "last_name": "seang",
+        "email": "seanglyheang222@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-14T05:54:28.428Z",
+        "role": null,
+        "phone": "None",
+        "department": "None",
+        "otp_secret": "FBMX2QYFHCZ47BNQLIPK3WSTLTFEWEQ6",
+        "otp_enabled": true,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 9,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$JhYk9VttNi6076ZTNo2xmN$tn+NO9RXTDojPrBSvG2R/ALFOhCmiC+A9G6XNXm9U/o=",
+        "last_login": "2026-06-14T09:09:27.968Z",
+        "is_superuser": false,
+        "username": "test01",
+        "first_name": "test",
+        "last_name": "01",
+        "email": "test01@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-14T06:03:17.310Z",
+        "role": 1,
+        "phone": "01076234567",
+        "department": null,
+        "otp_secret": "SKZ6TRVODYVGYHFEGZF3OVOMZHKF7BYW",
+        "otp_enabled": true,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 10,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$X0Uiki8oxoMir6I08KkjDr$Hc4qakUbl16GpfAZUuxUNuKX+V9QQkrw7+mkdoIytSc=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Test02",
+        "first_name": "Test",
+        "last_name": "02",
+        "email": "test02@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-14T06:24:42.205Z",
+        "role": 1,
+        "phone": "098765322",
+        "department": null,
+        "otp_secret": null,
+        "otp_enabled": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 11,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$GcKbH7jd8LtqEyzlp8ZSgr$rCU5tBfH15i7llRIa8mko3stsNNnY9F1E95RmXBXM8E=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "view01",
+        "first_name": "view",
+        "last_name": "01",
+        "email": "view01@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-14T06:27:49.507Z",
+        "role": 1,
+        "phone": "010581123",
+        "department": null,
+        "otp_secret": null,
+        "otp_enabled": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 12,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$lsWp9Bawsf5pxz3OvlI7ep$3yFtRp5/2v742ypiGclrEv/Ak6SlNbjmo8rlCl3lq48=",
+        "last_login": "2026-06-17T06:15:43.836Z",
+        "is_superuser": false,
+        "username": "Test03",
+        "first_name": "test",
+        "last_name": "03",
+        "email": "test03@gamil.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-14T06:29:19.611Z",
+        "role": 1,
+        "phone": "0147852396",
+        "department": "None",
+        "otp_secret": "L2NR4KMIYUFKBXLMYVZMZDAA2ZSOWX27",
+        "otp_enabled": true,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 13,
+    "fields": {
+        "password": "!8cUaV0mf3kIU22OrG5HNpcmjkAYrUmCnuDGz0yb2",
+        "last_login": "2026-06-17T02:49:39.948Z",
+        "is_superuser": false,
+        "username": "seang",
+        "first_name": "Seang",
+        "last_name": "Lyheang",
+        "email": "seanglyheang168@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-17T02:49:39.914Z",
+        "role": null,
+        "phone": null,
+        "department": null,
+        "otp_secret": null,
+        "otp_enabled": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 14,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$CqnT7VjViWbOnqvlOsP1ta$NeAiOwtKtasLAlSNRoWe2f86lg8Emeenqo1DXSjb0DI=",
+        "last_login": "2026-06-17T07:44:55.202Z",
+        "is_superuser": false,
+        "username": "Nomoney",
+        "first_name": "No",
+        "last_name": "money",
+        "email": "Nomoney@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-17T07:42:42.606Z",
+        "role": 1,
+        "phone": "010258989",
+        "department": "None",
+        "otp_secret": "HA2JZWHTEKLJMFHEFGP73OPLOL73A7MM",
+        "otp_enabled": true,
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

@@ -1,0 +1,245 @@
+[
+{
+    "model": "documents.category",
+    "pk": 1,
+    "fields": {
+        "name": "Contracts",
+        "description": "",
+        "created_at": "2026-06-13T04:44:24.257Z"
+    }
+},
+{
+    "model": "documents.category",
+    "pk": 2,
+    "fields": {
+        "name": "Reports",
+        "description": "",
+        "created_at": "2026-06-13T04:44:24.260Z"
+    }
+},
+{
+    "model": "documents.category",
+    "pk": 3,
+    "fields": {
+        "name": "Invoices",
+        "description": "",
+        "created_at": "2026-06-13T04:44:24.262Z"
+    }
+},
+{
+    "model": "documents.category",
+    "pk": 4,
+    "fields": {
+        "name": "HR Documents",
+        "description": "",
+        "created_at": "2026-06-13T04:44:24.264Z"
+    }
+},
+{
+    "model": "documents.category",
+    "pk": 5,
+    "fields": {
+        "name": "Technical",
+        "description": "",
+        "created_at": "2026-06-13T04:44:24.266Z"
+    }
+},
+{
+    "model": "documents.category",
+    "pk": 6,
+    "fields": {
+        "name": "General",
+        "description": "General documents for testing",
+        "created_at": "2026-06-13T17:56:40.268Z"
+    }
+},
+{
+    "model": "documents.category",
+    "pk": 7,
+    "fields": {
+        "name": "News",
+        "description": "all news",
+        "created_at": "2026-06-14T18:04:30.678Z"
+    }
+},
+{
+    "model": "documents.document",
+    "pk": 14,
+    "fields": {
+        "title": "My assingemnt",
+        "description": "test",
+        "file": "documents/2026/06/13/Assimeng.docx",
+        "category": 2,
+        "version": 1,
+        "status": "approved",
+        "owner": 4,
+        "admin_comment": null,
+        "created_at": "2026-06-13T19:24:29.095Z",
+        "updated_at": "2026-06-13T19:25:31.653Z"
+    }
+},
+{
+    "model": "documents.document",
+    "pk": 15,
+    "fields": {
+        "title": "Test",
+        "description": "Hello",
+        "file": "documents/2026/06/14/Assimeng.docx",
+        "category": 1,
+        "version": 1,
+        "status": "approved",
+        "owner": 4,
+        "admin_comment": null,
+        "created_at": "2026-06-14T03:25:49.295Z",
+        "updated_at": "2026-06-14T03:28:45.590Z"
+    }
+},
+{
+    "model": "documents.document",
+    "pk": 16,
+    "fields": {
+        "title": "Tech",
+        "description": "Test",
+        "file": "documents/2026/06/14/technical_9.pdf",
+        "category": 2,
+        "version": 2,
+        "status": "approved",
+        "owner": 5,
+        "admin_comment": null,
+        "created_at": "2026-06-14T04:39:10.170Z",
+        "updated_at": "2026-06-14T07:27:41.444Z"
+    }
+},
+{
+    "model": "documents.document",
+    "pk": 18,
+    "fields": {
+        "title": "invoices",
+        "description": "test",
+        "file": "documents/2026/06/14/hr_documents_8_jPtzfDJ.pdf",
+        "category": 3,
+        "version": 4,
+        "status": "approved",
+        "owner": 6,
+        "admin_comment": null,
+        "created_at": "2026-06-14T04:54:39.706Z",
+        "updated_at": "2026-06-14T07:46:11.252Z"
+    }
+},
+{
+    "model": "documents.document",
+    "pk": 19,
+    "fields": {
+        "title": "tech",
+        "description": "tech",
+        "file": "documents/2026/06/14/invoices_5_2rvWqcr.pdf",
+        "category": 6,
+        "version": 4,
+        "status": "approved",
+        "owner": 1,
+        "admin_comment": "",
+        "created_at": "2026-06-14T06:42:40.158Z",
+        "updated_at": "2026-06-14T10:05:19.473Z"
+    }
+},
+{
+    "model": "documents.document",
+    "pk": 20,
+    "fields": {
+        "title": "tech002",
+        "description": "",
+        "file": "documents/2026/06/14/technical_9_EEU2s94.pdf",
+        "category": 5,
+        "version": 1,
+        "status": "rejected",
+        "owner": 9,
+        "admin_comment": null,
+        "created_at": "2026-06-14T07:47:18.786Z",
+        "updated_at": "2026-06-14T08:31:27.327Z"
+    }
+},
+{
+    "model": "documents.document",
+    "pk": 21,
+    "fields": {
+        "title": "HR01",
+        "description": "hr01",
+        "file": "documents/2026/06/14/hr_documents_7_wGjW5dX.pdf",
+        "category": 4,
+        "version": 1,
+        "status": "rejected",
+        "owner": 9,
+        "admin_comment": null,
+        "created_at": "2026-06-14T08:08:38.396Z",
+        "updated_at": "2026-06-14T08:09:30.358Z"
+    }
+},
+{
+    "model": "documents.document",
+    "pk": 22,
+    "fields": {
+        "title": "contrac",
+        "description": "",
+        "file": "documents/2026/06/14/contracts_1.pdf",
+        "category": 1,
+        "version": 1,
+        "status": "rejected",
+        "owner": 9,
+        "admin_comment": "TEST COMMENT",
+        "created_at": "2026-06-14T08:35:44.945Z",
+        "updated_at": "2026-06-14T08:40:10.987Z"
+    }
+},
+{
+    "model": "documents.document",
+    "pk": 23,
+    "fields": {
+        "title": "invoice005",
+        "description": "",
+        "file": "documents/2026/06/14/invoices_5_1zAYrO4.pdf",
+        "category": 3,
+        "version": 1,
+        "status": "rejected",
+        "owner": 9,
+        "admin_comment": null,
+        "created_at": "2026-06-14T08:47:11.884Z",
+        "updated_at": "2026-06-14T08:47:31.596Z"
+    }
+},
+{
+    "model": "documents.document",
+    "pk": 24,
+    "fields": {
+        "title": "hr",
+        "description": "",
+        "file": "documents/2026/06/14/hr_documents_8_NfHwYRy.pdf",
+        "category": 4,
+        "version": 1,
+        "status": "rejected",
+        "owner": 9,
+        "admin_comment": "no way",
+        "created_at": "2026-06-14T08:57:01.352Z",
+        "updated_at": "2026-06-14T08:57:29.231Z"
+    }
+},
+{
+    "model": "documents.document",
+    "pk": 25,
+    "fields": {
+        "title": "hr",
+        "description": "test",
+        "file": "documents/2026/06/14/hr_documents_7_bdSifYT.pdf",
+        "category": 2,
+        "version": 1,
+        "status": "rejected",
+        "owner": 9,
+        "admin_comment": "not comple",
+        "created_at": "2026-06-14T09:10:21.845Z",
+        "updated_at": "2026-06-14T09:12:39.957Z"
+    }
+},
+{
+    "model": "documents.document",
+    "pk": 26,
+    "fields": {
+        "title": 
