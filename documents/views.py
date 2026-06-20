@@ -85,12 +85,14 @@ def document_list(request):
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     
+    
     categories = Category.objects.all()
     
     all_docs = Document.objects.all()
     
     context = {
         'documents': page_obj,
+        'page_obj': page_obj,
         'categories': categories,
         'current_category': category_id,
         'current_status': status,
