@@ -25,11 +25,11 @@ python manage.py shell -c "
 from django.contrib.auth import get_user_model
 User = get_user_model()
 
-if not User.objects.filter(username='admin').exists():
+if not User.objects.filter(username='renderadmin').exists():
     User.objects.create_superuser(
-        username='admin',
+        username='renderadmin',
         email='admin@gmail.com',
-        password='Admin@123'
+        password='Render@123'
     )
     print('Superuser created')
 else:
