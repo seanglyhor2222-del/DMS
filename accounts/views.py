@@ -613,6 +613,6 @@ def login_view(request):
                 messages.success(request, f"Welcome back, {user.username}!")
                 return redirect('dashboard')
         else:
-            messages.error(request, "Invalid username or password.")
+            messages.error(request, "❌Invalid username or password.")
     
     return render(request, 'registration/login.html')
